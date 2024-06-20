@@ -2,7 +2,107 @@
     ViewData["Title"] = "About Us";
 }
 
-<div class="text-center">
-    <h1 class="display-4">About Us</h1>
-  
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #FF0000, #FFA500, #FFFF00, #008000, #0000FF, #4B0082, #EE82EE);
+            color: white;
+            padding: 20px 0;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            margin: 0 0 10px;
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+
+        /* Team Section */
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+            margin: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover effect */
+        }
+
+            .team-member img {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                margin-bottom: 10px;
+                transition: transform 0.3s ease; /* Add smooth transition for hover effect */
+            }
+
+            .team-member:hover img {
+                transform: scale(1.1); /* Slightly enlarge the image on hover */
+            }
+
+            .team-member:hover {
+                transform: translateY(-10px); /* Slightly move the card up on hover */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow effect on hover */
+            }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>@ViewData["Title"]</h1>
+    </header>
+    <main>
+        <p>Welcome to our company! Where Vision and Values drive progress.</p>
+
+        <h2>Team Members</h2><br />
+        <div class="team-member">
+            <alt="Team Member 1" />
+            <h3>Jishnu </h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="team-member">
+            <alt="Team Member 2" />
+            <h3>Shivam Dayama</h3>
+            <p>Chief Financial Officer</p>
+        </div>
+        <div class="team-member">
+            <alt="Team Member 3" />
+            <h3>Shreeji Patel</h3>
+            <p>Chief Executive Auditor</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
