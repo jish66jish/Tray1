@@ -20,8 +20,5 @@ html {
 body {
   margin-bottom: 60px;
 }
-#HomepageBody {
-    background-image: url("/Images/bgimage2.jpeg" );
-    background-repeat: no-repeat;
-    background-size:auto;
+
 }
